@@ -85,12 +85,32 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AuthorManagement\AddAuthor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AuthorManagement\AddAuthor.Designer.cs">
+      <DependentUpon>AddAuthor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AuthorManagement\AuthorManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AuthorManagement\AuthorManagement.Designer.cs">
+      <DependentUpon>AuthorManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AuthorManagement\EditAuthor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AuthorManagement\EditAuthor.Designer.cs">
+      <DependentUpon>EditAuthor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Author.cs" />
     <Compile Include="ForgotPass.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ForgotPass.Designer.cs">
       <DependentUpon>ForgotPass.cs</DependentUpon>
     </Compile>
+    <Compile Include="Helpers\AuthorCRUD.cs" />
     <Compile Include="Helpers\BookCRUD.cs" />
     <Compile Include="Helpers\UserCRUD.cs" />
     <Compile Include="Home.cs">
@@ -119,6 +139,15 @@
     <Compile Include="Register.Designer.cs">
       <DependentUpon>Register.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AuthorManagement\AddAuthor.resx">
+      <DependentUpon>AddAuthor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AuthorManagement\AuthorManagement.resx">
+      <DependentUpon>AuthorManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AuthorManagement\EditAuthor.resx">
+      <DependentUpon>EditAuthor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ForgotPass.resx">
       <DependentUpon>ForgotPass.cs</DependentUpon>
     </EmbeddedResource>

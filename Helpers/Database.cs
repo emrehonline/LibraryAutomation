@@ -38,7 +38,7 @@ namespace LibraryAutomation.Helpers
                 connection.Close();
         }
 
-        public bool ExecuteCommand(string query, Dictionary<string, object> parameters)
+        public bool ExecuteCommand(string query, Dictionary<string, object> parameters = null)
         {
             using (var connection = GetConnection())
             {
@@ -46,9 +46,12 @@ namespace LibraryAutomation.Helpers
                 {
                     command.CommandText = query;
                     command.Connection = connection;
-                    foreach (var parameter in parameters)
+                    if (parameters != null)
                     {
-                        command.Parameters.Add(new SqliteParameter(parameter.Key, parameter.Value));
+                        foreach (var parameter in parameters)
+                        {
+                            command.Parameters.Add(new SqliteParameter(parameter.Key, parameter.Value));
+                        }
                     }
 
                     OpenConnection(connection);
@@ -57,7 +60,7 @@ namespace LibraryAutomation.Helpers
 
                     CloseConnection(connection);
 
-                    return result == 1;
+                    return result >= 1;
                 }
             }
         }

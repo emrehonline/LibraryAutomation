@@ -117,23 +117,14 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="btnAllBooks.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAJoAAAAjCAYAAABsOhOqAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACISURBVHhe7dKhAYAwAMAwLtnL8B9n4Dc4AAlVEVG13cYx
-        z3GsBf+Z5zPaW4BvGY2E0UgYjYTRSBiNhNFIGI2E0UgYjYTRSBiNhNFIGI2E0UgYjYTRSBiNhNFIGI2E
-        0UgYjYTRSBiNhNFIGI2E0UgYjYTRSBiNhNFIGI2E0UhsY5/XW4DP7PO6AZNOREuZDV9mAAAAAElFTkSu
-        QmCC
-</value>
-  </data>
   <data name="lblDGV.BaseStylesheet" xml:space="preserve">
     <value>#bunifu-label { padding: 0px; font-family: 'Segoe UI'; font-size: 12pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
   </data>
   <data name="lblMain.BaseStylesheet" xml:space="preserve">
     <value>#bunifu-label { padding: 0px; font-family: 'Segoe UI'; font-size: 12pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
   </data>
-  <data name="btnRentedBooks.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btnAdd.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAJoAAAAjCAYAAABsOhOqAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACISURBVHhe7dKhAYAwAMAwLtnL8B9n4Dc4AAlVEVG13cYx
@@ -142,40 +133,22 @@
         QmCC
 </value>
   </data>
-  <data name="btnAllAuthors.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnEdit.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAJoAAAAjCAYAAABsOhOqAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACISURBVHhe7dKhAYAwAMAwLtnL8B9n4Dc4AAlVEVG13cYx
-        z3GsBf+Z5zPaW4BvGY2E0UgYjYTRSBiNhNFIGI2E0UgYjYTRSBiNhNFIGI2E0UgYjYTRSBiNhNFIGI2E
-        0UgYjYTRSBiNhNFIGI2E0UgYjYTRSBiNhNFIGI2E0UhsY5/XW4DP7PO6AZNOREuZDV9mAAAAAElFTkSu
-        QmCC
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACXSURBVHhe7dKxCcMwAABBTxJwmS0zgshE2SNjuElhcJB3
+        0FdXHPwAvz3fv+9jXBesMh/bZlyfFywzHzMayxmNhNFIGI2E0UgYjYTRSBiNhNFIGI2E0UgYjYTRSBiN
+        hNFIGI2E0UgYjYTRSBiNhNFIGI2E0UgYjYTRSBiNhNFIGI2E0UgYjYTRSBiNxD3aPs5jBqyyj/P4A56e
+        cbLEHYAQAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="btnManageAuthors.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnDelete.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAJoAAAAjCAYAAABsOhOqAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACISURBVHhe7dKhAYAwAMAwLtnL8B9n4Dc4AAlVEVG13cYx
-        z3GsBf+Z5zPaW4BvGY2E0UgYjYTRSBiNhNFIGI2E0UgYjYTRSBiNhNFIGI2E0UgYjYTRSBiNhNFIGI2E
-        0UgYjYTRSBiNhNFIGI2E0UgYjYTRSBiNhNFIGI2E0UhsY5/XW4DP7PO6AZNOREuZDV9mAAAAAElFTkSu
-        QmCC
-</value>
-  </data>
-  <data name="btnManageBooks.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAJoAAAAjCAYAAABsOhOqAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACISURBVHhe7dKhAYAwAMAwLtnL8B9n4Dc4AAlVEVG13cYx
-        z3GsBf+Z5zPaW4BvGY2E0UgYjYTRSBiNhNFIGI2E0UgYjYTRSBiNhNFIGI2E0UgYjYTRSBiNhNFIGI2E
-        0UgYjYTRSBiNhNFIGI2E0UgYjYTRSBiNhNFIGI2E0UhsY5/XW4DP7PO6AZNOREuZDV9mAAAAAElFTkSu
-        QmCC
-</value>
-  </data>
-  <data name="btnRent.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAJoAAAAjCAYAAABsOhOqAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACISURBVHhe7dKhAYAwAMAwLtnL8B9n4Dc4AAlVEVG13cYx
-        z3GsBf+Z5zPaW4BvGY2E0UgYjYTRSBiNhNFIGI2E0UgYjYTRSBiNhNFIGI2E0UgYjYTRSBiNhNFIGI2E
-        0UgYjYTRSBiNhNFIGI2E0UgYjYTRSBiNhNFIGI2E0UhsY5/XW4DP7PO6AZNOREuZDV9mAAAAAElFTkSu
-        QmCC
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACVSURBVHhe7dKxCcMwAABBTxJwmS29gbOfx3CTwqCg7KCv
+        rjj4AX57n9/r9RkDVpmPbTPGccAy8zGjsZzRSBiNhNFIGI2E0UgYjYTRSBiNhNFIGI2E0UgYjYTRSBiN
+        hNFIGI2E0UgYjYTRSBiNhNFIGI2E0UgYjYTRSBiNhNFIGI2E0UgYjYTRSPxH28/nngGr7Odz/wA5RYtf
+        32rN0wAAAABJRU5ErkJggg==
 </value>
   </data>
 </root>
