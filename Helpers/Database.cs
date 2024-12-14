@@ -120,7 +120,38 @@ namespace LibraryAutomation.Helpers
                     return rows;
                 }
             }
+        }
 
+        public List<object[]> GetListByQuery(string query, int columnCount = 1)
+        {
+            using (var connection = GetConnection())
+            {
+                using (SqliteCommand command = connection.CreateCommand())
+                {
+                    command.CommandText = query;
+                    command.Connection = connection;
+
+                    OpenConnection(connection);
+                    List<object[]> rows = new List<object[]>();
+                    using (SqliteDataReader read = command.ExecuteReader())
+                    {
+                        while (read.Read())
+                        {
+                            object[] row = new object[columnCount];
+                            for (int i = 0; i < columnCount; i++)
+                            {
+                                row[i] = read.GetValue(i);
+                            }
+
+                            rows.Add(row);
+                        }
+                    }
+
+                    CloseConnection(connection);
+
+                    return rows;
+                }
+            }
         }
     }
 }

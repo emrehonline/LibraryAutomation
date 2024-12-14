@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
+using System.Xml.Linq;
 
 namespace LibraryAutomation.BookManagement
 {
@@ -27,26 +28,36 @@ namespace LibraryAutomation.BookManagement
             {
                 dropDownAuthors.Items.Add($"{author.ID}: {author.Name} {author.LastName}");
             }
-            var authorData = authors.FirstOrDefault(x => x.ID.Equals(book.AuthorId));
-            var authorIndex = dropDownAuthors.Items.IndexOf($"{authorData.ID}: {authorData.Name} {authorData.LastName}");
-            dropDownAuthors.SelectedIndex = authorIndex;
-
+            if (authors.Count > 0)
+            {
+                var authorData = authors.FirstOrDefault(x => x.ID.Equals(book.AuthorId));
+                var authorIndex = dropDownAuthors.Items.IndexOf($"{authorData.ID}: {authorData.Name} {authorData.LastName}");
+                dropDownAuthors.SelectedIndex = authorIndex;
+            }
         }
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            book.Name = txtName.Text;
-            var result = bookCRUD.UpdateBook(book);
-
-            if (result)
+            if (string.IsNullOrEmpty(txtName.Text))
             {
-                MessageBox.Show("Book Successfully Edited!");
-                this.Close();
+                MessageBox.Show("Book Name can not be empty!");
             }
             else
             {
-                MessageBox.Show("Process failed, Please try again!");
+                book.Name = txtName.Text;
+                var result = bookCRUD.UpdateBook(book);
+
+                if (result)
+                {
+                    MessageBox.Show("Book Successfully Edited!");
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("Process failed, Please try again!");
+                }
             }
+
         }
 
         private void EditBook_Load(object sender, EventArgs e)

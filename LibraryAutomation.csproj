@@ -40,6 +40,9 @@
     <Reference Include="Bunifu.UI.WinForms.BunifuDataGridView">
       <HintPath>Bunifu\BunifuCrack\Bunifu.UI.WinForms.BunifuDataGridView.dll</HintPath>
     </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuDatePicker">
+      <HintPath>Bunifu\BunifuCrack\Bunifu.UI.WinForms.BunifuDatePicker.dll</HintPath>
+    </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuDropdown">
       <HintPath>Bunifu\BunifuCrack\Bunifu.UI.WinForms.BunifuDropdown.dll</HintPath>
     </Reference>
@@ -124,6 +127,37 @@
     <Compile Include="BookManagement\EditBook.Designer.cs">
       <DependentUpon>EditBook.cs</DependentUpon>
     </Compile>
+    <Compile Include="BookRental\BookRentalManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BookRental\BookRentalManagement.Designer.cs">
+      <DependentUpon>BookRentalManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BookRental\RentBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BookRental\RentBook.Designer.cs">
+      <DependentUpon>RentBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerManagement\AddCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerManagement\AddCustomer.Designer.cs">
+      <DependentUpon>AddCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerManagement\CustomerManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerManagement\CustomerManagement.Designer.cs">
+      <DependentUpon>CustomerManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerManagement\EditCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerManagement\EditCustomer.Designer.cs">
+      <DependentUpon>EditCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Customer.cs" />
     <Compile Include="Entities\Author.cs" />
     <Compile Include="Entities\Book.cs" />
     <Compile Include="Authentication\ForgotPass.cs">
@@ -132,8 +166,10 @@
     <Compile Include="Authentication\ForgotPass.Designer.cs">
       <DependentUpon>ForgotPass.cs</DependentUpon>
     </Compile>
+    <Compile Include="Helpers\CustomerCRUD.cs" />
     <Compile Include="Helpers\AuthorCRUD.cs" />
     <Compile Include="Helpers\BookCRUD.cs" />
+    <Compile Include="Helpers\RentCRUD.cs" />
     <Compile Include="Helpers\UserCRUD.cs" />
     <Compile Include="Home.cs">
       <SubType>Form</SubType>
@@ -181,6 +217,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Authentication\ForgotPass.resx">
       <DependentUpon>ForgotPass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BookRental\BookRentalManagement.resx">
+      <DependentUpon>BookRentalManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BookRental\RentBook.resx">
+      <DependentUpon>RentBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerManagement\AddCustomer.resx">
+      <DependentUpon>AddCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerManagement\CustomerManagement.resx">
+      <DependentUpon>CustomerManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerManagement\EditCustomer.resx">
+      <DependentUpon>EditCustomer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>

@@ -303,7 +303,7 @@
             this.Controls.Add(this.label1);
             this.Name = "ForgotPass";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "ForgotPass";
+            this.Text = "Forgot Password";
             this.ResumeLayout(false);
             this.PerformLayout();
 

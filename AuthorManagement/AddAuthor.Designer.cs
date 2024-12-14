@@ -303,7 +303,7 @@
             this.Controls.Add(this.txtName);
             this.Name = "AddAuthor";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "AddAuthor";
+            this.Text = "Add Author";
             this.ResumeLayout(false);
             this.PerformLayout();
 

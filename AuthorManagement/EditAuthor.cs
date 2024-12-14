@@ -2,6 +2,7 @@
 using LibraryAutomation.Helpers;
 using System;
 using System.Windows.Forms;
+using System.Xml.Linq;
 
 namespace LibraryAutomation.AuthorManagement
 {
@@ -21,18 +22,25 @@ namespace LibraryAutomation.AuthorManagement
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            author.Name = txtName.Text;
-            author.LastName = txtLastName.Text;
-            var result = authorCRUD.UpdateAuthor(author);
-        
-            if(result)
+            if (string.IsNullOrEmpty(txtName.Text) || string.IsNullOrEmpty(txtLastName.Text))
             {
-                MessageBox.Show("Author Successfully Edited!");
-                this.Close();
+                MessageBox.Show("Author Name or Last Name can not be empty!");
             }
             else
             {
-                MessageBox.Show("Process failed, Please try again!");
+                author.Name = txtName.Text;
+                author.LastName = txtLastName.Text;
+                var result = authorCRUD.UpdateAuthor(author);
+
+                if (result)
+                {
+                    MessageBox.Show("Author Successfully Edited!");
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("Process failed, Please try again!");
+                }
             }
         }
     }

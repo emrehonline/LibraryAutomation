@@ -23,7 +23,8 @@ namespace LibraryAutomation.BookManagement
                 dropDownAuthors.Items.Add($"{author.ID}: {author.Name} {author.LastName}");
             }
             
-            dropDownAuthors.SelectedIndex = 0;
+            if (authors.Count > 0)
+                dropDownAuthors.SelectedIndex = 0;
         }
 
         private void btnSave_Click(object sender, EventArgs e)

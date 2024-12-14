@@ -39,6 +39,8 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges7 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges8 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges9 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.btnAllBooks = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.lblDGV = new Bunifu.UI.WinForms.BunifuLabel();
             this.lblMain = new Bunifu.UI.WinForms.BunifuLabel();
@@ -52,6 +54,8 @@
             this.bunifuLabel2 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel3 = new Bunifu.UI.WinForms.BunifuLabel();
             this.btnShowRentingGraph = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.btnManageCustomers = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.btnAllCustomers = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             ((System.ComponentModel.ISupportInitialize)(this.dgv)).BeginInit();
             this.SuspendLayout();
             // 
@@ -102,7 +106,7 @@
             this.btnAllBooks.IdleIconLeftImage = null;
             this.btnAllBooks.IdleIconRightImage = null;
             this.btnAllBooks.IndicateFocus = false;
-            this.btnAllBooks.Location = new System.Drawing.Point(752, 163);
+            this.btnAllBooks.Location = new System.Drawing.Point(740, 146);
             this.btnAllBooks.Name = "btnAllBooks";
             this.btnAllBooks.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnAllBooks.OnDisabledState.BorderRadius = 1;
@@ -152,7 +156,7 @@
             this.lblDGV.Cursor = System.Windows.Forms.Cursors.Default;
             this.lblDGV.CursorType = System.Windows.Forms.Cursors.Default;
             this.lblDGV.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDGV.Location = new System.Drawing.Point(33, 68);
+            this.lblDGV.Location = new System.Drawing.Point(21, 51);
             this.lblDGV.Name = "lblDGV";
             this.lblDGV.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblDGV.Size = new System.Drawing.Size(60, 21);
@@ -167,7 +171,7 @@
             this.lblMain.AutoEllipsis = false;
             this.lblMain.CursorType = null;
             this.lblMain.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMain.Location = new System.Drawing.Point(33, 29);
+            this.lblMain.Location = new System.Drawing.Point(21, 12);
             this.lblMain.Name = "lblMain";
             this.lblMain.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblMain.Size = new System.Drawing.Size(239, 21);
@@ -223,7 +227,7 @@
             this.btnRentedBooks.IdleIconLeftImage = null;
             this.btnRentedBooks.IdleIconRightImage = null;
             this.btnRentedBooks.IndicateFocus = false;
-            this.btnRentedBooks.Location = new System.Drawing.Point(752, 204);
+            this.btnRentedBooks.Location = new System.Drawing.Point(740, 228);
             this.btnRentedBooks.Name = "btnRentedBooks";
             this.btnRentedBooks.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnRentedBooks.OnDisabledState.BorderRadius = 1;
@@ -264,6 +268,7 @@
             this.btnRentedBooks.TextMarginLeft = 0;
             this.btnRentedBooks.TextPadding = new System.Windows.Forms.Padding(0);
             this.btnRentedBooks.UseDefaultRadiusAndThickness = true;
+            this.btnRentedBooks.Click += new System.EventHandler(this.btnRentedBooks_Click);
             // 
             // btnAllAuthors
             // 
@@ -312,7 +317,7 @@
             this.btnAllAuthors.IdleIconLeftImage = null;
             this.btnAllAuthors.IdleIconRightImage = null;
             this.btnAllAuthors.IndicateFocus = false;
-            this.btnAllAuthors.Location = new System.Drawing.Point(752, 122);
+            this.btnAllAuthors.Location = new System.Drawing.Point(740, 105);
             this.btnAllAuthors.Name = "btnAllAuthors";
             this.btnAllAuthors.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnAllAuthors.OnDisabledState.BorderRadius = 1;
@@ -402,7 +407,7 @@
             this.btnManageAuthors.IdleIconLeftImage = null;
             this.btnManageAuthors.IdleIconRightImage = null;
             this.btnManageAuthors.IndicateFocus = false;
-            this.btnManageAuthors.Location = new System.Drawing.Point(752, 327);
+            this.btnManageAuthors.Location = new System.Drawing.Point(740, 310);
             this.btnManageAuthors.Name = "btnManageAuthors";
             this.btnManageAuthors.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnManageAuthors.OnDisabledState.BorderRadius = 1;
@@ -492,7 +497,7 @@
             this.btnManageBooks.IdleIconLeftImage = null;
             this.btnManageBooks.IdleIconRightImage = null;
             this.btnManageBooks.IndicateFocus = false;
-            this.btnManageBooks.Location = new System.Drawing.Point(752, 368);
+            this.btnManageBooks.Location = new System.Drawing.Point(740, 351);
             this.btnManageBooks.Name = "btnManageBooks";
             this.btnManageBooks.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnManageBooks.OnDisabledState.BorderRadius = 1;
@@ -582,7 +587,7 @@
             this.btnRent.IdleIconLeftImage = null;
             this.btnRent.IdleIconRightImage = null;
             this.btnRent.IndicateFocus = false;
-            this.btnRent.Location = new System.Drawing.Point(752, 497);
+            this.btnRent.Location = new System.Drawing.Point(740, 489);
             this.btnRent.Name = "btnRent";
             this.btnRent.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnRent.OnDisabledState.BorderRadius = 1;
@@ -623,6 +628,7 @@
             this.btnRent.TextMarginLeft = 0;
             this.btnRent.TextPadding = new System.Windows.Forms.Padding(0);
             this.btnRent.UseDefaultRadiusAndThickness = true;
+            this.btnRent.Click += new System.EventHandler(this.btnRent_Click);
             // 
             // dgv
             // 
@@ -676,7 +682,7 @@
             this.dgv.HeaderBackColor = System.Drawing.Color.DodgerBlue;
             this.dgv.HeaderBgColor = System.Drawing.Color.Empty;
             this.dgv.HeaderForeColor = System.Drawing.Color.White;
-            this.dgv.Location = new System.Drawing.Point(33, 95);
+            this.dgv.Location = new System.Drawing.Point(21, 78);
             this.dgv.MultiSelect = false;
             this.dgv.Name = "dgv";
             this.dgv.RowHeadersVisible = false;
@@ -692,7 +698,7 @@
             this.bunifuLabel1.AutoEllipsis = false;
             this.bunifuLabel1.CursorType = null;
             this.bunifuLabel1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuLabel1.Location = new System.Drawing.Point(779, 95);
+            this.bunifuLabel1.Location = new System.Drawing.Point(767, 78);
             this.bunifuLabel1.Name = "bunifuLabel1";
             this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel1.Size = new System.Drawing.Size(94, 21);
@@ -707,7 +713,7 @@
             this.bunifuLabel2.AutoEllipsis = false;
             this.bunifuLabel2.CursorType = null;
             this.bunifuLabel2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuLabel2.Location = new System.Drawing.Point(779, 300);
+            this.bunifuLabel2.Location = new System.Drawing.Point(767, 283);
             this.bunifuLabel2.Name = "bunifuLabel2";
             this.bunifuLabel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel2.Size = new System.Drawing.Size(102, 21);
@@ -722,7 +728,7 @@
             this.bunifuLabel3.AutoEllipsis = false;
             this.bunifuLabel3.CursorType = null;
             this.bunifuLabel3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuLabel3.Location = new System.Drawing.Point(804, 470);
+            this.bunifuLabel3.Location = new System.Drawing.Point(792, 462);
             this.bunifuLabel3.Name = "bunifuLabel3";
             this.bunifuLabel3.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel3.Size = new System.Drawing.Size(60, 21);
@@ -778,7 +784,7 @@
             this.btnShowRentingGraph.IdleIconLeftImage = null;
             this.btnShowRentingGraph.IdleIconRightImage = null;
             this.btnShowRentingGraph.IndicateFocus = false;
-            this.btnShowRentingGraph.Location = new System.Drawing.Point(752, 538);
+            this.btnShowRentingGraph.Location = new System.Drawing.Point(740, 530);
             this.btnShowRentingGraph.Name = "btnShowRentingGraph";
             this.btnShowRentingGraph.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnShowRentingGraph.OnDisabledState.BorderRadius = 1;
@@ -820,11 +826,193 @@
             this.btnShowRentingGraph.TextPadding = new System.Windows.Forms.Padding(0);
             this.btnShowRentingGraph.UseDefaultRadiusAndThickness = true;
             // 
+            // btnManageCustomers
+            // 
+            this.btnManageCustomers.AllowAnimations = true;
+            this.btnManageCustomers.AllowMouseEffects = true;
+            this.btnManageCustomers.AllowToggling = false;
+            this.btnManageCustomers.AnimationSpeed = 200;
+            this.btnManageCustomers.AutoGenerateColors = false;
+            this.btnManageCustomers.AutoRoundBorders = false;
+            this.btnManageCustomers.AutoSizeLeftIcon = true;
+            this.btnManageCustomers.AutoSizeRightIcon = true;
+            this.btnManageCustomers.BackColor = System.Drawing.Color.Transparent;
+            this.btnManageCustomers.BackColor1 = System.Drawing.Color.DodgerBlue;
+            this.btnManageCustomers.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnManageCustomers.BackgroundImage")));
+            this.btnManageCustomers.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnManageCustomers.ButtonText = "Manage Customers";
+            this.btnManageCustomers.ButtonTextMarginLeft = 0;
+            this.btnManageCustomers.ColorContrastOnClick = 45;
+            this.btnManageCustomers.ColorContrastOnHover = 45;
+            this.btnManageCustomers.Cursor = System.Windows.Forms.Cursors.Default;
+            borderEdges8.BottomLeft = true;
+            borderEdges8.BottomRight = true;
+            borderEdges8.TopLeft = true;
+            borderEdges8.TopRight = true;
+            this.btnManageCustomers.CustomizableEdges = borderEdges8;
+            this.btnManageCustomers.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnManageCustomers.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btnManageCustomers.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btnManageCustomers.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.btnManageCustomers.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
+            this.btnManageCustomers.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnManageCustomers.ForeColor = System.Drawing.Color.White;
+            this.btnManageCustomers.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnManageCustomers.IconLeftCursor = System.Windows.Forms.Cursors.Default;
+            this.btnManageCustomers.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
+            this.btnManageCustomers.IconMarginLeft = 11;
+            this.btnManageCustomers.IconPadding = 10;
+            this.btnManageCustomers.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnManageCustomers.IconRightCursor = System.Windows.Forms.Cursors.Default;
+            this.btnManageCustomers.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
+            this.btnManageCustomers.IconSize = 25;
+            this.btnManageCustomers.IdleBorderColor = System.Drawing.Color.DodgerBlue;
+            this.btnManageCustomers.IdleBorderRadius = 1;
+            this.btnManageCustomers.IdleBorderThickness = 1;
+            this.btnManageCustomers.IdleFillColor = System.Drawing.Color.DodgerBlue;
+            this.btnManageCustomers.IdleIconLeftImage = null;
+            this.btnManageCustomers.IdleIconRightImage = null;
+            this.btnManageCustomers.IndicateFocus = false;
+            this.btnManageCustomers.Location = new System.Drawing.Point(740, 392);
+            this.btnManageCustomers.Name = "btnManageCustomers";
+            this.btnManageCustomers.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btnManageCustomers.OnDisabledState.BorderRadius = 1;
+            this.btnManageCustomers.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnManageCustomers.OnDisabledState.BorderThickness = 1;
+            this.btnManageCustomers.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btnManageCustomers.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.btnManageCustomers.OnDisabledState.IconLeftImage = null;
+            this.btnManageCustomers.OnDisabledState.IconRightImage = null;
+            this.btnManageCustomers.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.btnManageCustomers.onHoverState.BorderRadius = 1;
+            this.btnManageCustomers.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnManageCustomers.onHoverState.BorderThickness = 1;
+            this.btnManageCustomers.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.btnManageCustomers.onHoverState.ForeColor = System.Drawing.Color.White;
+            this.btnManageCustomers.onHoverState.IconLeftImage = null;
+            this.btnManageCustomers.onHoverState.IconRightImage = null;
+            this.btnManageCustomers.OnIdleState.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.btnManageCustomers.OnIdleState.BorderRadius = 1;
+            this.btnManageCustomers.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnManageCustomers.OnIdleState.BorderThickness = 1;
+            this.btnManageCustomers.OnIdleState.FillColor = System.Drawing.Color.DodgerBlue;
+            this.btnManageCustomers.OnIdleState.ForeColor = System.Drawing.Color.White;
+            this.btnManageCustomers.OnIdleState.IconLeftImage = null;
+            this.btnManageCustomers.OnIdleState.IconRightImage = null;
+            this.btnManageCustomers.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.btnManageCustomers.OnPressedState.BorderRadius = 1;
+            this.btnManageCustomers.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnManageCustomers.OnPressedState.BorderThickness = 1;
+            this.btnManageCustomers.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.btnManageCustomers.OnPressedState.ForeColor = System.Drawing.Color.White;
+            this.btnManageCustomers.OnPressedState.IconLeftImage = null;
+            this.btnManageCustomers.OnPressedState.IconRightImage = null;
+            this.btnManageCustomers.Size = new System.Drawing.Size(154, 35);
+            this.btnManageCustomers.TabIndex = 14;
+            this.btnManageCustomers.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnManageCustomers.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnManageCustomers.TextMarginLeft = 0;
+            this.btnManageCustomers.TextPadding = new System.Windows.Forms.Padding(0);
+            this.btnManageCustomers.UseDefaultRadiusAndThickness = true;
+            this.btnManageCustomers.Click += new System.EventHandler(this.btnManageCustomers_Click);
+            // 
+            // btnAllCustomers
+            // 
+            this.btnAllCustomers.AllowAnimations = true;
+            this.btnAllCustomers.AllowMouseEffects = true;
+            this.btnAllCustomers.AllowToggling = false;
+            this.btnAllCustomers.AnimationSpeed = 200;
+            this.btnAllCustomers.AutoGenerateColors = false;
+            this.btnAllCustomers.AutoRoundBorders = false;
+            this.btnAllCustomers.AutoSizeLeftIcon = true;
+            this.btnAllCustomers.AutoSizeRightIcon = true;
+            this.btnAllCustomers.BackColor = System.Drawing.Color.Transparent;
+            this.btnAllCustomers.BackColor1 = System.Drawing.Color.DodgerBlue;
+            this.btnAllCustomers.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAllCustomers.BackgroundImage")));
+            this.btnAllCustomers.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnAllCustomers.ButtonText = "Show All Customers";
+            this.btnAllCustomers.ButtonTextMarginLeft = 0;
+            this.btnAllCustomers.ColorContrastOnClick = 45;
+            this.btnAllCustomers.ColorContrastOnHover = 45;
+            this.btnAllCustomers.Cursor = System.Windows.Forms.Cursors.Default;
+            borderEdges9.BottomLeft = true;
+            borderEdges9.BottomRight = true;
+            borderEdges9.TopLeft = true;
+            borderEdges9.TopRight = true;
+            this.btnAllCustomers.CustomizableEdges = borderEdges9;
+            this.btnAllCustomers.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnAllCustomers.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btnAllCustomers.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btnAllCustomers.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.btnAllCustomers.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
+            this.btnAllCustomers.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnAllCustomers.ForeColor = System.Drawing.Color.White;
+            this.btnAllCustomers.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAllCustomers.IconLeftCursor = System.Windows.Forms.Cursors.Default;
+            this.btnAllCustomers.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
+            this.btnAllCustomers.IconMarginLeft = 11;
+            this.btnAllCustomers.IconPadding = 10;
+            this.btnAllCustomers.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnAllCustomers.IconRightCursor = System.Windows.Forms.Cursors.Default;
+            this.btnAllCustomers.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
+            this.btnAllCustomers.IconSize = 25;
+            this.btnAllCustomers.IdleBorderColor = System.Drawing.Color.DodgerBlue;
+            this.btnAllCustomers.IdleBorderRadius = 1;
+            this.btnAllCustomers.IdleBorderThickness = 1;
+            this.btnAllCustomers.IdleFillColor = System.Drawing.Color.DodgerBlue;
+            this.btnAllCustomers.IdleIconLeftImage = null;
+            this.btnAllCustomers.IdleIconRightImage = null;
+            this.btnAllCustomers.IndicateFocus = false;
+            this.btnAllCustomers.Location = new System.Drawing.Point(740, 187);
+            this.btnAllCustomers.Name = "btnAllCustomers";
+            this.btnAllCustomers.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btnAllCustomers.OnDisabledState.BorderRadius = 1;
+            this.btnAllCustomers.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnAllCustomers.OnDisabledState.BorderThickness = 1;
+            this.btnAllCustomers.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btnAllCustomers.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.btnAllCustomers.OnDisabledState.IconLeftImage = null;
+            this.btnAllCustomers.OnDisabledState.IconRightImage = null;
+            this.btnAllCustomers.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.btnAllCustomers.onHoverState.BorderRadius = 1;
+            this.btnAllCustomers.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnAllCustomers.onHoverState.BorderThickness = 1;
+            this.btnAllCustomers.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.btnAllCustomers.onHoverState.ForeColor = System.Drawing.Color.White;
+            this.btnAllCustomers.onHoverState.IconLeftImage = null;
+            this.btnAllCustomers.onHoverState.IconRightImage = null;
+            this.btnAllCustomers.OnIdleState.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.btnAllCustomers.OnIdleState.BorderRadius = 1;
+            this.btnAllCustomers.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnAllCustomers.OnIdleState.BorderThickness = 1;
+            this.btnAllCustomers.OnIdleState.FillColor = System.Drawing.Color.DodgerBlue;
+            this.btnAllCustomers.OnIdleState.ForeColor = System.Drawing.Color.White;
+            this.btnAllCustomers.OnIdleState.IconLeftImage = null;
+            this.btnAllCustomers.OnIdleState.IconRightImage = null;
+            this.btnAllCustomers.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.btnAllCustomers.OnPressedState.BorderRadius = 1;
+            this.btnAllCustomers.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnAllCustomers.OnPressedState.BorderThickness = 1;
+            this.btnAllCustomers.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.btnAllCustomers.OnPressedState.ForeColor = System.Drawing.Color.White;
+            this.btnAllCustomers.OnPressedState.IconLeftImage = null;
+            this.btnAllCustomers.OnPressedState.IconRightImage = null;
+            this.btnAllCustomers.Size = new System.Drawing.Size(154, 35);
+            this.btnAllCustomers.TabIndex = 15;
+            this.btnAllCustomers.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnAllCustomers.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnAllCustomers.TextMarginLeft = 0;
+            this.btnAllCustomers.TextPadding = new System.Windows.Forms.Padding(0);
+            this.btnAllCustomers.UseDefaultRadiusAndThickness = true;
+            this.btnAllCustomers.Click += new System.EventHandler(this.btnAllCustomers_Click);
+            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(918, 649);
+            this.ClientSize = new System.Drawing.Size(909, 634);
+            this.Controls.Add(this.btnAllCustomers);
+            this.Controls.Add(this.btnManageCustomers);
             this.Controls.Add(this.btnShowRentingGraph);
             this.Controls.Add(this.bunifuLabel3);
             this.Controls.Add(this.bunifuLabel2);
@@ -840,7 +1028,7 @@
             this.Controls.Add(this.btnAllBooks);
             this.Name = "Home";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Home";
+            this.Text = "Library Automation Panel";
             ((System.ComponentModel.ISupportInitialize)(this.dgv)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -862,5 +1050,7 @@
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel2;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel3;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnShowRentingGraph;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnManageCustomers;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnAllCustomers;
     }
 }
