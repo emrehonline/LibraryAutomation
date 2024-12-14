@@ -38,6 +38,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges7 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.btnAllBooks = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.lblDGV = new Bunifu.UI.WinForms.BunifuLabel();
             this.lblMain = new Bunifu.UI.WinForms.BunifuLabel();
@@ -47,6 +48,10 @@
             this.btnManageBooks = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btnRent = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.dgv = new Bunifu.UI.WinForms.BunifuDataGridView();
+            this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.bunifuLabel2 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.bunifuLabel3 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.btnShowRentingGraph = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             ((System.ComponentModel.ISupportInitialize)(this.dgv)).BeginInit();
             this.SuspendLayout();
             // 
@@ -97,7 +102,7 @@
             this.btnAllBooks.IdleIconLeftImage = null;
             this.btnAllBooks.IdleIconRightImage = null;
             this.btnAllBooks.IndicateFocus = false;
-            this.btnAllBooks.Location = new System.Drawing.Point(752, 136);
+            this.btnAllBooks.Location = new System.Drawing.Point(752, 163);
             this.btnAllBooks.Name = "btnAllBooks";
             this.btnAllBooks.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnAllBooks.OnDisabledState.BorderRadius = 1;
@@ -132,7 +137,7 @@
             this.btnAllBooks.OnPressedState.IconLeftImage = null;
             this.btnAllBooks.OnPressedState.IconRightImage = null;
             this.btnAllBooks.Size = new System.Drawing.Size(154, 35);
-            this.btnAllBooks.TabIndex = 0;
+            this.btnAllBooks.TabIndex = 3;
             this.btnAllBooks.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnAllBooks.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnAllBooks.TextMarginLeft = 0;
@@ -166,7 +171,7 @@
             this.lblMain.Name = "lblMain";
             this.lblMain.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblMain.Size = new System.Drawing.Size(239, 21);
-            this.lblMain.TabIndex = 3;
+            this.lblMain.TabIndex = 0;
             this.lblMain.Text = "Library Automation Main Panel";
             this.lblMain.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.lblMain.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
@@ -218,7 +223,7 @@
             this.btnRentedBooks.IdleIconLeftImage = null;
             this.btnRentedBooks.IdleIconRightImage = null;
             this.btnRentedBooks.IndicateFocus = false;
-            this.btnRentedBooks.Location = new System.Drawing.Point(752, 177);
+            this.btnRentedBooks.Location = new System.Drawing.Point(752, 204);
             this.btnRentedBooks.Name = "btnRentedBooks";
             this.btnRentedBooks.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnRentedBooks.OnDisabledState.BorderRadius = 1;
@@ -307,7 +312,7 @@
             this.btnAllAuthors.IdleIconLeftImage = null;
             this.btnAllAuthors.IdleIconRightImage = null;
             this.btnAllAuthors.IndicateFocus = false;
-            this.btnAllAuthors.Location = new System.Drawing.Point(752, 95);
+            this.btnAllAuthors.Location = new System.Drawing.Point(752, 122);
             this.btnAllAuthors.Name = "btnAllAuthors";
             this.btnAllAuthors.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnAllAuthors.OnDisabledState.BorderRadius = 1;
@@ -397,7 +402,7 @@
             this.btnManageAuthors.IdleIconLeftImage = null;
             this.btnManageAuthors.IdleIconRightImage = null;
             this.btnManageAuthors.IndicateFocus = false;
-            this.btnManageAuthors.Location = new System.Drawing.Point(752, 300);
+            this.btnManageAuthors.Location = new System.Drawing.Point(752, 327);
             this.btnManageAuthors.Name = "btnManageAuthors";
             this.btnManageAuthors.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnManageAuthors.OnDisabledState.BorderRadius = 1;
@@ -487,7 +492,7 @@
             this.btnManageBooks.IdleIconLeftImage = null;
             this.btnManageBooks.IdleIconRightImage = null;
             this.btnManageBooks.IndicateFocus = false;
-            this.btnManageBooks.Location = new System.Drawing.Point(752, 341);
+            this.btnManageBooks.Location = new System.Drawing.Point(752, 368);
             this.btnManageBooks.Name = "btnManageBooks";
             this.btnManageBooks.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnManageBooks.OnDisabledState.BorderRadius = 1;
@@ -577,7 +582,7 @@
             this.btnRent.IdleIconLeftImage = null;
             this.btnRent.IdleIconRightImage = null;
             this.btnRent.IndicateFocus = false;
-            this.btnRent.Location = new System.Drawing.Point(752, 382);
+            this.btnRent.Location = new System.Drawing.Point(752, 497);
             this.btnRent.Name = "btnRent";
             this.btnRent.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnRent.OnDisabledState.BorderRadius = 1;
@@ -681,11 +686,149 @@
             this.dgv.TabIndex = 9;
             this.dgv.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
             // 
+            // bunifuLabel1
+            // 
+            this.bunifuLabel1.AllowParentOverrides = false;
+            this.bunifuLabel1.AutoEllipsis = false;
+            this.bunifuLabel1.CursorType = null;
+            this.bunifuLabel1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuLabel1.Location = new System.Drawing.Point(779, 95);
+            this.bunifuLabel1.Name = "bunifuLabel1";
+            this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel1.Size = new System.Drawing.Size(94, 21);
+            this.bunifuLabel1.TabIndex = 10;
+            this.bunifuLabel1.Text = "List Controls";
+            this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel1.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // bunifuLabel2
+            // 
+            this.bunifuLabel2.AllowParentOverrides = false;
+            this.bunifuLabel2.AutoEllipsis = false;
+            this.bunifuLabel2.CursorType = null;
+            this.bunifuLabel2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuLabel2.Location = new System.Drawing.Point(779, 300);
+            this.bunifuLabel2.Name = "bunifuLabel2";
+            this.bunifuLabel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel2.Size = new System.Drawing.Size(102, 21);
+            this.bunifuLabel2.TabIndex = 11;
+            this.bunifuLabel2.Text = "Management ";
+            this.bunifuLabel2.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel2.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // bunifuLabel3
+            // 
+            this.bunifuLabel3.AllowParentOverrides = false;
+            this.bunifuLabel3.AutoEllipsis = false;
+            this.bunifuLabel3.CursorType = null;
+            this.bunifuLabel3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuLabel3.Location = new System.Drawing.Point(804, 470);
+            this.bunifuLabel3.Name = "bunifuLabel3";
+            this.bunifuLabel3.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel3.Size = new System.Drawing.Size(60, 21);
+            this.bunifuLabel3.TabIndex = 12;
+            this.bunifuLabel3.Text = "Renting";
+            this.bunifuLabel3.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel3.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // btnShowRentingGraph
+            // 
+            this.btnShowRentingGraph.AllowAnimations = true;
+            this.btnShowRentingGraph.AllowMouseEffects = true;
+            this.btnShowRentingGraph.AllowToggling = false;
+            this.btnShowRentingGraph.AnimationSpeed = 200;
+            this.btnShowRentingGraph.AutoGenerateColors = false;
+            this.btnShowRentingGraph.AutoRoundBorders = false;
+            this.btnShowRentingGraph.AutoSizeLeftIcon = true;
+            this.btnShowRentingGraph.AutoSizeRightIcon = true;
+            this.btnShowRentingGraph.BackColor = System.Drawing.Color.Transparent;
+            this.btnShowRentingGraph.BackColor1 = System.Drawing.Color.DodgerBlue;
+            this.btnShowRentingGraph.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnShowRentingGraph.BackgroundImage")));
+            this.btnShowRentingGraph.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnShowRentingGraph.ButtonText = "Show Renting Graph";
+            this.btnShowRentingGraph.ButtonTextMarginLeft = 0;
+            this.btnShowRentingGraph.ColorContrastOnClick = 45;
+            this.btnShowRentingGraph.ColorContrastOnHover = 45;
+            this.btnShowRentingGraph.Cursor = System.Windows.Forms.Cursors.Default;
+            borderEdges7.BottomLeft = true;
+            borderEdges7.BottomRight = true;
+            borderEdges7.TopLeft = true;
+            borderEdges7.TopRight = true;
+            this.btnShowRentingGraph.CustomizableEdges = borderEdges7;
+            this.btnShowRentingGraph.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnShowRentingGraph.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btnShowRentingGraph.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btnShowRentingGraph.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.btnShowRentingGraph.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
+            this.btnShowRentingGraph.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnShowRentingGraph.ForeColor = System.Drawing.Color.White;
+            this.btnShowRentingGraph.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnShowRentingGraph.IconLeftCursor = System.Windows.Forms.Cursors.Default;
+            this.btnShowRentingGraph.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
+            this.btnShowRentingGraph.IconMarginLeft = 11;
+            this.btnShowRentingGraph.IconPadding = 10;
+            this.btnShowRentingGraph.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnShowRentingGraph.IconRightCursor = System.Windows.Forms.Cursors.Default;
+            this.btnShowRentingGraph.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
+            this.btnShowRentingGraph.IconSize = 25;
+            this.btnShowRentingGraph.IdleBorderColor = System.Drawing.Color.DodgerBlue;
+            this.btnShowRentingGraph.IdleBorderRadius = 1;
+            this.btnShowRentingGraph.IdleBorderThickness = 1;
+            this.btnShowRentingGraph.IdleFillColor = System.Drawing.Color.DodgerBlue;
+            this.btnShowRentingGraph.IdleIconLeftImage = null;
+            this.btnShowRentingGraph.IdleIconRightImage = null;
+            this.btnShowRentingGraph.IndicateFocus = false;
+            this.btnShowRentingGraph.Location = new System.Drawing.Point(752, 538);
+            this.btnShowRentingGraph.Name = "btnShowRentingGraph";
+            this.btnShowRentingGraph.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btnShowRentingGraph.OnDisabledState.BorderRadius = 1;
+            this.btnShowRentingGraph.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnShowRentingGraph.OnDisabledState.BorderThickness = 1;
+            this.btnShowRentingGraph.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btnShowRentingGraph.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.btnShowRentingGraph.OnDisabledState.IconLeftImage = null;
+            this.btnShowRentingGraph.OnDisabledState.IconRightImage = null;
+            this.btnShowRentingGraph.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.btnShowRentingGraph.onHoverState.BorderRadius = 1;
+            this.btnShowRentingGraph.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnShowRentingGraph.onHoverState.BorderThickness = 1;
+            this.btnShowRentingGraph.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.btnShowRentingGraph.onHoverState.ForeColor = System.Drawing.Color.White;
+            this.btnShowRentingGraph.onHoverState.IconLeftImage = null;
+            this.btnShowRentingGraph.onHoverState.IconRightImage = null;
+            this.btnShowRentingGraph.OnIdleState.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.btnShowRentingGraph.OnIdleState.BorderRadius = 1;
+            this.btnShowRentingGraph.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnShowRentingGraph.OnIdleState.BorderThickness = 1;
+            this.btnShowRentingGraph.OnIdleState.FillColor = System.Drawing.Color.DodgerBlue;
+            this.btnShowRentingGraph.OnIdleState.ForeColor = System.Drawing.Color.White;
+            this.btnShowRentingGraph.OnIdleState.IconLeftImage = null;
+            this.btnShowRentingGraph.OnIdleState.IconRightImage = null;
+            this.btnShowRentingGraph.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.btnShowRentingGraph.OnPressedState.BorderRadius = 1;
+            this.btnShowRentingGraph.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnShowRentingGraph.OnPressedState.BorderThickness = 1;
+            this.btnShowRentingGraph.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.btnShowRentingGraph.OnPressedState.ForeColor = System.Drawing.Color.White;
+            this.btnShowRentingGraph.OnPressedState.IconLeftImage = null;
+            this.btnShowRentingGraph.OnPressedState.IconRightImage = null;
+            this.btnShowRentingGraph.Size = new System.Drawing.Size(154, 35);
+            this.btnShowRentingGraph.TabIndex = 13;
+            this.btnShowRentingGraph.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnShowRentingGraph.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnShowRentingGraph.TextMarginLeft = 0;
+            this.btnShowRentingGraph.TextPadding = new System.Windows.Forms.Padding(0);
+            this.btnShowRentingGraph.UseDefaultRadiusAndThickness = true;
+            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(918, 649);
+            this.Controls.Add(this.btnShowRentingGraph);
+            this.Controls.Add(this.bunifuLabel3);
+            this.Controls.Add(this.bunifuLabel2);
+            this.Controls.Add(this.bunifuLabel1);
             this.Controls.Add(this.dgv);
             this.Controls.Add(this.btnRent);
             this.Controls.Add(this.btnManageBooks);
@@ -696,6 +839,7 @@
             this.Controls.Add(this.lblDGV);
             this.Controls.Add(this.btnAllBooks);
             this.Name = "Home";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Home";
             ((System.ComponentModel.ISupportInitialize)(this.dgv)).EndInit();
             this.ResumeLayout(false);
@@ -714,5 +858,9 @@
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnManageBooks;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnRent;
         private Bunifu.UI.WinForms.BunifuDataGridView dgv;
+        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel1;
+        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel2;
+        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel3;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnShowRentingGraph;
     }
 }

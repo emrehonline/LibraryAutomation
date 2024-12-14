@@ -421,6 +421,7 @@
             this.Controls.Add(this.lblDGV);
             this.Controls.Add(this.dgv);
             this.Name = "AuthorManagement";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AuthorManagement";
             this.Load += new System.EventHandler(this.AuthorManagement_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv)).EndInit();

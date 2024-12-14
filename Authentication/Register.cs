@@ -1,26 +1,19 @@
 ﻿using LibraryAutomation.Helpers;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace LibraryAutomation
+namespace LibraryAutomation.Authentication
 {
-    public partial class ForgotPass : Form
+    public partial class Register : Form
     {
         private UserCRUD userCrud;
-        public ForgotPass()
+        public Register()
         {
             InitializeComponent();
             userCrud = new UserCRUD();
         }
 
-        private void btnReset_Click(object sender, EventArgs e)
+        private void btnRegister_Click(object sender, EventArgs e)
         {
             string userName = txtUserName.Text;
             string password = txtPassword.Text;
@@ -31,22 +24,20 @@ namespace LibraryAutomation
             }
             else
             {
-                if (!userCrud.CheckIfUserExist(userName))
+                if (userCrud.CheckIfUserExist(userName))
                 {
-                    MessageBox.Show("User does not exist!");
+                    MessageBox.Show("User already exist!");
                 }
                 else
                 {
-                    bool result = userCrud.ResetPassword(userName, password);
+                    bool result = userCrud.CreateUser(userName, password);
 
                     if (result)
-                        MessageBox.Show("Password successfully changed!");
+                        MessageBox.Show("User successfully created!");
                     else
                         MessageBox.Show("Process failed, Please try again!");
                 }
-
             }
-
 
         }
     }

@@ -1,4 +1,4 @@
-﻿namespace LibraryAutomation
+﻿namespace LibraryAutomation.Authentication
 {
     partial class Login
     {
@@ -340,6 +340,7 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label1);
             this.Name = "Login";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.ResumeLayout(false);
             this.PerformLayout();

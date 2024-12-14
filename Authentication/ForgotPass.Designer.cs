@@ -1,4 +1,4 @@
-﻿namespace LibraryAutomation
+﻿namespace LibraryAutomation.Authentication
 {
     partial class ForgotPass
     {
@@ -302,6 +302,7 @@
             this.Controls.Add(this.btnReset);
             this.Controls.Add(this.label1);
             this.Name = "ForgotPass";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ForgotPass";
             this.ResumeLayout(false);
             this.PerformLayout();

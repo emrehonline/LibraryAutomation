@@ -126,10 +126,10 @@
     </Compile>
     <Compile Include="Entities\Author.cs" />
     <Compile Include="Entities\Book.cs" />
-    <Compile Include="ForgotPass.cs">
+    <Compile Include="Authentication\ForgotPass.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ForgotPass.Designer.cs">
+    <Compile Include="Authentication\ForgotPass.Designer.cs">
       <DependentUpon>ForgotPass.cs</DependentUpon>
     </Compile>
     <Compile Include="Helpers\AuthorCRUD.cs" />
@@ -141,10 +141,10 @@
     <Compile Include="Home.Designer.cs">
       <DependentUpon>Home.cs</DependentUpon>
     </Compile>
-    <Compile Include="Login.cs">
+    <Compile Include="Authentication\Login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Login.Designer.cs">
+    <Compile Include="Authentication\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
     <Compile Include="Helpers\Database.cs" />
@@ -155,10 +155,10 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="Register.cs">
+    <Compile Include="Authentication\Register.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Register.Designer.cs">
+    <Compile Include="Authentication\Register.Designer.cs">
       <DependentUpon>Register.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="AuthorManagement\AddAuthor.resx">
@@ -179,13 +179,13 @@
     <EmbeddedResource Include="BookManagement\EditBook.resx">
       <DependentUpon>EditBook.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ForgotPass.resx">
+    <EmbeddedResource Include="Authentication\ForgotPass.resx">
       <DependentUpon>ForgotPass.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Login.resx">
+    <EmbeddedResource Include="Authentication\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
@@ -194,7 +194,7 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Register.resx">
+    <EmbeddedResource Include="Authentication\Register.resx">
       <DependentUpon>Register.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />

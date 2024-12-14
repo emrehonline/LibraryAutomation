@@ -1,4 +1,4 @@
-﻿namespace LibraryAutomation
+﻿namespace LibraryAutomation.Authentication
 {
     partial class Register
     {

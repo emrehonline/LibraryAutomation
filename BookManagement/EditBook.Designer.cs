@@ -285,6 +285,7 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtName);
             this.Name = "EditBook";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EditAuthor";
             this.Load += new System.EventHandler(this.EditBook_Load);
             this.ResumeLayout(false);
