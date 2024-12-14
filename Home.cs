@@ -124,5 +124,11 @@ namespace LibraryAutomation
                 dgv.Rows.Add(rent);
             }
         }
+
+        private void btnShowRentingGraph_Click(object sender, EventArgs e)
+        {
+            RentingGraph rentingGraph = new RentingGraph();
+            rentingGraph.ShowDialog();
+        }
     }
 }

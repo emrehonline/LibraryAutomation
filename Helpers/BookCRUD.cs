@@ -25,10 +25,10 @@ namespace LibraryAutomation.Helpers
         public List<Book> GetFormattedBookList()
         {
             var result = GetBookList();
-            List<Book> authors = new List<Book>();
+            List<Book> books = new List<Book>();
             foreach (var data in result)
             {
-                authors.Add(new Book()
+                books.Add(new Book()
                 {
                     ID = int.Parse(data[0].ToString()),
                     Name = data[1].ToString(),
@@ -36,7 +36,7 @@ namespace LibraryAutomation.Helpers
                 });
             }
 
-            return authors;
+            return books;
         }
 
         public bool CheckIfBookExist(string name, int authorId)

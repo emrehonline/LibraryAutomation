@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LibraryAutomation.Entities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,14 +21,30 @@ namespace LibraryAutomation.Helpers
             return database.GetListByQuery(query, 4);
         }
 
-        public bool CheckIfBookRented(int bookId, int customerId, string rentedDate, string returnDate)
+        public List<Rent> GetFormattedRentList()
         {
-            string query = "Select * from CustomerBook where BookID = @BookID and CustomerID = @CustomerID and RentedDate= @RentedDate and ReturnDate = @ReturnDate";
+            var result = GetRentListByQuery();
+            List<Rent> rents = new List<Rent>();
+            foreach (var data in result)
+            {
+                rents.Add(new Rent()
+                {
+                    Book = data[0].ToString(),
+                    Customer = data[1].ToString(),
+                    RentedDate = data[2].ToString(),
+                    ReturnDate = data[3].ToString(),
+                });
+            }
+
+            return rents;
+        }
+
+        public bool CheckIfBookRented(int bookId, int customerId)
+        {
+            string query = "Select * from CustomerBook where BookID = @BookID and CustomerID = @CustomerID";
             Dictionary<string, object> parameters = new Dictionary<string, object>();
             parameters.Add("@BookID", bookId);
             parameters.Add("@CustomerID", customerId);
-            parameters.Add("@RentedDate", rentedDate);
-            parameters.Add("@ReturnDate", returnDate);
 
             return database.CheckIfDataExist(query, parameters, 1);
         }

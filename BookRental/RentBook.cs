@@ -56,20 +56,22 @@ namespace LibraryAutomation.BookRental
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            var rentedDate = dtpRentDate.Value.ToString("dd-MM-yyyy");
-            var returnDate = dtpReturnDate.Value.ToString("dd-MM-yyyy");
-
-            if (selectedBook.ID  == 0 || selectedCustomer.ID == 0)
+            if (selectedBook.ID == 0 || selectedCustomer.ID == 0)
             {
                 MessageBox.Show("You have to choose Book and Customer to rent!");
             }
-
-            if (rentCRUD.CheckIfBookRented(selectedBook.ID, selectedCustomer.ID, rentedDate, returnDate))
+            else if (dtpRentDate.Value.Date > dtpReturnDate.Value.Date)
             {
-                MessageBox.Show("Book already Rented to this customer exist!");
+                MessageBox.Show("You cannot select a date earlier than the Rental Date as the Return Date.!");
+            }
+            else if (rentCRUD.CheckIfBookRented(selectedBook.ID, selectedCustomer.ID))
+            {
+                MessageBox.Show("Book already Rented by this customer exist!");
             }
             else
             {
+                var rentedDate = dtpRentDate.Value.Date.ToString("dd-MM-yyyy");
+                var returnDate = dtpReturnDate.Value.Date.ToString("dd-MM-yyyy");
                 bool result = rentCRUD.CreateRent(selectedBook.ID, selectedCustomer.ID, rentedDate, returnDate);
 
                 if (result)

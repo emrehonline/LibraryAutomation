@@ -420,6 +420,8 @@
             this.Controls.Add(this.lblMain);
             this.Controls.Add(this.lblDGV);
             this.Controls.Add(this.dgv);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.MaximizeBox = false;
             this.Name = "CustomerManagement";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Customer Management";

@@ -270,6 +270,7 @@
             this.dtpRentDate.DisabledColor = System.Drawing.Color.Gray;
             this.dtpRentDate.DisplayWeekNumbers = false;
             this.dtpRentDate.DPHeight = 0;
+            this.dtpRentDate.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
             this.dtpRentDate.FillDatePicker = false;
             this.dtpRentDate.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.dtpRentDate.ForeColor = System.Drawing.Color.Black;
@@ -278,7 +279,7 @@
             this.dtpRentDate.IconLocation = Bunifu.UI.WinForms.BunifuDatePicker.Indicator.Right;
             this.dtpRentDate.LeftTextMargin = 5;
             this.dtpRentDate.Location = new System.Drawing.Point(29, 192);
-            this.dtpRentDate.MinimumSize = new System.Drawing.Size(0, 32);
+            this.dtpRentDate.MinimumSize = new System.Drawing.Size(4, 32);
             this.dtpRentDate.Name = "dtpRentDate";
             this.dtpRentDate.Size = new System.Drawing.Size(220, 32);
             this.dtpRentDate.TabIndex = 30;
@@ -293,6 +294,7 @@
             this.dtpReturnDate.DisabledColor = System.Drawing.Color.Gray;
             this.dtpReturnDate.DisplayWeekNumbers = false;
             this.dtpReturnDate.DPHeight = 0;
+            this.dtpReturnDate.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
             this.dtpReturnDate.FillDatePicker = false;
             this.dtpReturnDate.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.dtpReturnDate.ForeColor = System.Drawing.Color.Black;
@@ -301,7 +303,7 @@
             this.dtpReturnDate.IconLocation = Bunifu.UI.WinForms.BunifuDatePicker.Indicator.Right;
             this.dtpReturnDate.LeftTextMargin = 5;
             this.dtpReturnDate.Location = new System.Drawing.Point(29, 260);
-            this.dtpReturnDate.MinimumSize = new System.Drawing.Size(0, 32);
+            this.dtpReturnDate.MinimumSize = new System.Drawing.Size(4, 32);
             this.dtpReturnDate.Name = "dtpReturnDate";
             this.dtpReturnDate.Size = new System.Drawing.Size(220, 32);
             this.dtpReturnDate.TabIndex = 31;
@@ -353,6 +355,9 @@
             this.Controls.Add(this.dropDownCustomers);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.label5);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "RentBook";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Rent A Book";

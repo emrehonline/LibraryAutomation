@@ -55,6 +55,33 @@
     <Reference Include="Microsoft.Data.Sqlite, Version=9.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
       <HintPath>packages\Microsoft.Data.Sqlite.Core.9.0.0\lib\netstandard2.0\Microsoft.Data.Sqlite.dll</HintPath>
     </Reference>
+    <Reference Include="MindFusion.Charting, Version=4.3.0.452, Culture=neutral, PublicKeyToken=dd7449df9ffcc455, processorArchitecture=MSIL">
+      <HintPath>packages\MindFusion.Charting.4.3.0\lib\net45\MindFusion.Charting.dll</HintPath>
+    </Reference>
+    <Reference Include="MindFusion.Charting.WinForms, Version=4.3.0.452, Culture=neutral, PublicKeyToken=dd7449df9ffcc455, processorArchitecture=MSIL">
+      <HintPath>packages\MindFusion.Charting.4.3.0\lib\net45\MindFusion.Charting.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="MindFusion.Common, Version=1.3.8.450, Culture=neutral, PublicKeyToken=dd7449df9ffcc455, processorArchitecture=MSIL">
+      <HintPath>packages\MindFusion.Charting.4.3.0\lib\net45\MindFusion.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="MindFusion.Gauges, Version=1.0.1.450, Culture=neutral, PublicKeyToken=dd7449df9ffcc455, processorArchitecture=MSIL">
+      <HintPath>packages\MindFusion.Charting.4.3.0\lib\net45\MindFusion.Gauges.dll</HintPath>
+    </Reference>
+    <Reference Include="MindFusion.Gauges.WinForms, Version=1.0.1.450, Culture=neutral, PublicKeyToken=dd7449df9ffcc455, processorArchitecture=MSIL">
+      <HintPath>packages\MindFusion.Charting.4.3.0\lib\net45\MindFusion.Gauges.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="MindFusion.Licensing, Version=1.0.6.400, Culture=neutral, PublicKeyToken=9d02e21d957ddaef, processorArchitecture=MSIL">
+      <HintPath>packages\MindFusion.Charting.4.3.0\lib\net45\MindFusion.Licensing.dll</HintPath>
+    </Reference>
+    <Reference Include="MindFusion.Pdf, Version=1.3.2.451, Culture=neutral, PublicKeyToken=dd7449df9ffcc455, processorArchitecture=MSIL">
+      <HintPath>packages\MindFusion.Charting.4.3.0\lib\net45\MindFusion.Pdf.dll</HintPath>
+    </Reference>
+    <Reference Include="MindFusion.Scripting, Version=1.0.3.452, Culture=neutral, PublicKeyToken=dd7449df9ffcc455, processorArchitecture=MSIL">
+      <HintPath>packages\MindFusion.Charting.4.3.0\lib\net45\MindFusion.Scripting.dll</HintPath>
+    </Reference>
+    <Reference Include="MindFusion.Svg, Version=1.2.4.451, Culture=neutral, PublicKeyToken=dd7449df9ffcc455, processorArchitecture=MSIL">
+      <HintPath>packages\MindFusion.Charting.4.3.0\lib\net45\MindFusion.Svg.dll</HintPath>
+    </Reference>
     <Reference Include="SQLitePCLRaw.batteries_v2, Version=2.1.10.2445, Culture=neutral, PublicKeyToken=8226ea5df37bcae9, processorArchitecture=MSIL">
       <HintPath>packages\SQLitePCLRaw.bundle_e_sqlite3.2.1.10\lib\net461\SQLitePCLRaw.batteries_v2.dll</HintPath>
     </Reference>
@@ -139,6 +166,12 @@
     <Compile Include="BookRental\RentBook.Designer.cs">
       <DependentUpon>RentBook.cs</DependentUpon>
     </Compile>
+    <Compile Include="BookRental\RentingGraph.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BookRental\RentingGraph.Designer.cs">
+      <DependentUpon>RentingGraph.cs</DependentUpon>
+    </Compile>
     <Compile Include="CustomerManagement\AddCustomer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -166,6 +199,7 @@
     <Compile Include="Authentication\ForgotPass.Designer.cs">
       <DependentUpon>ForgotPass.cs</DependentUpon>
     </Compile>
+    <Compile Include="Entities\Rent.cs" />
     <Compile Include="Helpers\CustomerCRUD.cs" />
     <Compile Include="Helpers\AuthorCRUD.cs" />
     <Compile Include="Helpers\BookCRUD.cs" />
@@ -223,6 +257,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="BookRental\RentBook.resx">
       <DependentUpon>RentBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BookRental\RentingGraph.resx">
+      <DependentUpon>RentingGraph.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CustomerManagement\AddCustomer.resx">
       <DependentUpon>AddCustomer.cs</DependentUpon>
