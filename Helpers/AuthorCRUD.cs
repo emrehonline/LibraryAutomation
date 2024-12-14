@@ -20,6 +20,23 @@ namespace LibraryAutomation.Helpers
             return database.GetList("Author", 3);
         }
 
+        public List<Author> GetFormattedAuthorList()
+        {
+            var result = GetAuthorList();
+            List<Author> authors = new List<Author>();
+            foreach (var data in result)
+            {
+                authors.Add(new Author()
+                {
+                    ID = int.Parse(data[0].ToString()),
+                    Name = data[1].ToString(),
+                    LastName = data[2].ToString(),
+                });
+            }
+
+            return authors;
+        }
+
         public bool CheckIfAuthorExist(string name, string lastName)
         {
             string query = "Select * from Author where Name = @Name and LastName = @LastName";

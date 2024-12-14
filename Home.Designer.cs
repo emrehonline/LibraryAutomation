@@ -528,6 +528,7 @@
             this.btnManageBooks.TextMarginLeft = 0;
             this.btnManageBooks.TextPadding = new System.Windows.Forms.Padding(0);
             this.btnManageBooks.UseDefaultRadiusAndThickness = true;
+            this.btnManageBooks.Click += new System.EventHandler(this.btnManageBooks_Click);
             // 
             // btnRent
             // 

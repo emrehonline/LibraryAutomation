@@ -66,5 +66,13 @@ namespace LibraryAutomation
             authorManagement.ShowDialog();
             this.Visible = true;
         }
+
+        private void btnManageBooks_Click(object sender, EventArgs e)
+        {
+            BookManagement.BookManagement bookManagement = new BookManagement.BookManagement();
+            this.Visible = false;
+            bookManagement.ShowDialog(); 
+            this.Visible = true;
+        }
     }
 }

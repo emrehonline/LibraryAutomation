@@ -40,9 +40,14 @@ namespace LibraryAutomation.AuthorManagement
                     bool result = authorCrud.CreateAuthor(name, lastName);
 
                     if (result)
+                    {
                         MessageBox.Show("Author successfully created!");
+                        this.Close();
+                    }
                     else
+                    {
                         MessageBox.Show("Process failed, Please try again!");
+                    }
                 }
             }
         }

@@ -40,6 +40,9 @@
     <Reference Include="Bunifu.UI.WinForms.BunifuDataGridView">
       <HintPath>Bunifu\BunifuCrack\Bunifu.UI.WinForms.BunifuDataGridView.dll</HintPath>
     </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuDropdown">
+      <HintPath>Bunifu\BunifuCrack\Bunifu.UI.WinForms.BunifuDropdown.dll</HintPath>
+    </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuLabel">
       <HintPath>Bunifu\BunifuCrack\Bunifu.UI.WinForms.BunifuLabel.dll</HintPath>
     </Reference>
@@ -103,7 +106,26 @@
     <Compile Include="AuthorManagement\EditAuthor.Designer.cs">
       <DependentUpon>EditAuthor.cs</DependentUpon>
     </Compile>
+    <Compile Include="BookManagement\AddBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BookManagement\AddBook.Designer.cs">
+      <DependentUpon>AddBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BookManagement\BookManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BookManagement\BookManagement.Designer.cs">
+      <DependentUpon>BookManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BookManagement\EditBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BookManagement\EditBook.Designer.cs">
+      <DependentUpon>EditBook.cs</DependentUpon>
+    </Compile>
     <Compile Include="Entities\Author.cs" />
+    <Compile Include="Entities\Book.cs" />
     <Compile Include="ForgotPass.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -147,6 +169,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AuthorManagement\EditAuthor.resx">
       <DependentUpon>EditAuthor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BookManagement\AddBook.resx">
+      <DependentUpon>AddBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BookManagement\BookManagement.resx">
+      <DependentUpon>BookManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BookManagement\EditBook.resx">
+      <DependentUpon>EditBook.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ForgotPass.resx">
       <DependentUpon>ForgotPass.cs</DependentUpon>
